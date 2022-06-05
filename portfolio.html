@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- Заголовок-->
+    <header class="header">
+        <div class="container header__container">
+            <nav class="header__nav">
+                <a class="link logo" href="./index.html"> Web<span class="logo--header">Studio</span></a>
+                <ul class="list header__pages-list">
+                    <li class="header__pages-item"> <a class="link header__pages-link" href="./index.html">Студия</a> </li>
+                    <li class="header__pages-item"> <a class="link header__pages-link header__pages-link--active" href="./portfolio.html">Портфолио</a> </li>
+                    <li class="header__pages-item"> <a class="link header__pages-link" href="#">Контакты</a> </li>
+                </ul>
+            </nav>
+            <ul class="list header__contacts-list">
+                <li class="header__contacts-item"> <a class="link header__contacts-link" href="mailto:info@devstudio.com">
+                    <svg class="header__contacts-icon" width="16" height="12"><use href="./image/symbol-defs.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com</a></li>
+                <li class="header__contacts-item"> <a class="link header__contacts-link" href="tel:+380961111111">
+                    <svg class="header__contacts-icon" width="10" height="16"><use href="./image/symbol-defs.svg#icon-phone"></use></svg>
+                    +38 096 111 11 11</a> </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Фильтр услуг -->
+    <main>
+        <section class="section">            
+            <div class="container filter service">
+                <h1 class="visually-hidden">Фильтр услуг</h1>
+                <ul class="list filter__button-set">
+                    <li class="filter__item"><button type="button" class="button filter__button">Все</button></li>
+                    <li class="filter__item"><button type="button" class="button filter__button">Веб-сайты</button></li>
+                    <li class="filter__item"><button type="button" class="button filter__button">Приложения</button></li>
+                    <li class="filter__item"><button type="button" class="button filter__button">Дизайн</button></li>
+                    <li class="filter__item"><button type="button" class="button filter__button">Маркетинг</button></li>
+                </ul>
+                
+                <ul class="list service__list card-set">
+                    <li class="card-set__item service__item">
+                        <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <div class="service__thumb">
+                                <img src="./image/portfolio/2_1.jpg" alt="Веб-сайт Технокряк" width="370" height="294">
+                                <div class="service__wrap">
+                                    <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>                                
+                            </div>
+                            <div class="service__card">
+                                <h2 class="service__title">Технокряк</h2>
+                                <p class="service__description">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item service-list__item">
+                        <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <div class="service__thumb">
+                                <img src="./image/portfolio/2_2.jpg" alt="Дизайн постера" width="370" height="294">
+                                <div class="service__wrap">
+                                    <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>                            
+                            <div class="service__card">
+                                <h2 class="service__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="service__description">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item service-list__item">
+                        <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <div class="service__thumb">
+                                <img src="./image/portfolio/2_3.jpg" alt="Приложение Seafood" width="370" height="294">
+                                <div class="service__wrap">
+                                    <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>                            
+                            <div class="service__card">
+                                <h2 class="service__title">Ресторан Seafood</h2>
+                                <p class="service__description">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item service-list__item">
+                        <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <div class="service__thumb">
+                                <img src="./image/portfolio/2_4.jpg" alt="Проект Prime" width="370" height="294">
+                                <div class="service__wrap">
+                                    <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>                            
+                            <div class="service__card">
+                                <h2 class="service__title">Проект Prime</h2>
+                                <p class="service__description">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item service-list__item">
+                        <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <div class="service__thumb">
+                                <img src="./image/portfolio/2_5.jpg" alt="Приложение Boxes" width="370" height="294">
+                                <div class="service__wrap">
+                                    <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>                            
+                            <div class="service__card">
+                                <h2 class="service__title">Проект Boxes</h2>
+                                <p class="service__description">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item service-list__item">
+                        <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <div class="service__thumb">
+                                <img src="./image/portfolio/2_6.jpg" alt="Веб-сайт Inspiration has no Borders" width="370" height="294">
+                                <div class="service__wrap">
+                                    <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>                            
+                            <div class="service__card">
+                                <h2 class="service__title">Inspiration has no Borders</h2>
+                                <p class="service__description">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item service-list__item">
+                        <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <div class="service__thumb">
+                                <img src="./image/portfolio/2_7.jpg" alt="Дизайн издания Limited Edition" width="370" height="294">
+                                <div class="service__wrap">
+                                    <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>                            
+                            <div class="service__card">
+                                <h2 class="service__title">Издание Limited Edition</h2>
+                                <p class="service__description">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item service-list__item">
+                        <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <div class="service__thumb">
+                                <img src="./image/portfolio/2_8.jpg" alt="Проект LAB" width="370" height="294">
+                                <div class="service__wrap">
+                                    <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>                            
+                            <div class="service__card">
+                                <h2 class="service__title">Проект LAB</h2>
+                                <p class="service__description">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="card-set__item service-list__item">
+                        <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                            <div class="service__thumb">
+                                <img src="./image/portfolio/2_9.jpg" alt="Приложениее Growing Business" width="370" height="294">
+                                <div class="service__wrap">
+                                    <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                </div>
+                            </div>                            
+                            <div class="service__card">
+                                <h2 class="service__title">Growing Business</h2>
+                                <p class="service__description">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__address">
+                <a class="link logo footer__logo" href="./index.html">Web<span class="logo--footer">Studio</span></a>
+                <address class="footer-address">
+                    <ul class="list address__list">
+                        <li class="footer-address__item"> <a class="link footer-address__link" href="https://goo.gl/maps/w4182wPYShXfGa5f7"
+                                target="_blank" rel="noopener noreferrer nofollow"> г. Киев, пр-т Леси Украинки, 26 </a></li>
+                        <li class="footer-address__item"> <a class="link footer-address__link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-address__item"> <a class="link footer-address__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-join__container">
+                <p class="footer-join__text">присоединяйтесь</p>
+                <ul class="list icon-set">
+                    <li class="icon-set__item"><a class="link icon-set__link icon-set__link--footer" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow">
+                        <svg class="icon-set__icon" width="20" height="20">
+                            <use href="./image/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a></li>
+                    <li class="icon-set__item"><a class="link icon-set__link icon-set__link--footer" href="https://twitter.com/" target="_blank" rel="noopener noreferrer nofollow">
+                        <svg class="icon-set__icon" width="20" height="20">
+                            <use href="./image/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a></li>
+                    <li class="icon-set__item"><a class="link icon-set__link icon-set__link--footer" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer nofollow">
+                        <svg class="icon-set__icon" width="20" height="20">
+                            <use href="./image/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a></li>
+                    <li class="icon-set__item"><a class="link icon-set__link icon-set__link--footer" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer nofollow">
+                        <svg class="icon-set__icon" width="20" height="20">
+                            <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="footer-subscribe__container">
+                <p class="footer-subscribe__text">Подпишитесь на рассылку</p>
+                <form class="footer-subscribe__form">
+                    <label for="subscribe"></label>
+                    <input class="footer-subscribe__input" type="email" name="subscribe" id="subscribe" placeholder="E-mail">
+                    <button class="button hero-button" type="submit">Подписаться
+                        <svg class="footer-subscribe__icon" width="24" height="24">
+                            <use href="./image/symbol-defs.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

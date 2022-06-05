@@ -1,0 +1,19 @@
+.clients {
+    &__link {
+        height: 92px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $icon-grey;
+        border-radius: 4px;
+        fill: $icon-grey;
+        transition: fill $transition-time $cubic, border $transition-time $cubic;
+        &:hover, &:focus {
+            border: 1px solid $secondary-text-color;
+            fill: $secondary-text-color;
+        }
+    }
+    &__item {
+        flex-basis: calc(100% / 6 - 30px);
+    }
+}

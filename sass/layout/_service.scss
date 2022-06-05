@@ -1,0 +1,60 @@
+.service {
+    &__item {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        transition: box-shadow $transition-time $cubic;
+        &:hover, &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+    &__thumb {
+        position: relative;
+        overflow: hidden;
+    }
+    &__wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 1px;
+        transform: translateY(100%);
+        padding: 63px 24px;
+        background-color: $thumb-background;
+        transition: transform $transition-time $cubic;
+    }
+    &__link:hover &__wrap,
+    &__link:focus &__wrap {
+        transform: translateY(0);
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+        color: $logo-white;
+        transform: scale(2);    
+        transition: transform $transition-time $cubic 50ms;
+    }
+    &__link:hover &__text,
+    &__link:focus &__text {
+        transform: scale(1);
+    }
+    &__card {
+        border: 1px solid $border-color;
+        padding: 20px 24px;
+    }
+    &__title {
+        color: $header-text-color;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        margin-bottom: 4px;
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 1.88;
+    }
+}
