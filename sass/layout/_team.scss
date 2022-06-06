@@ -8,7 +8,10 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
             text-align: center;
-            flex-basis: calc(100% / 4 - 30px);
+            margin-bottom:30px ;
+        }
+        &__item:last-child {
+            margin-bottom: 0;
         }
         &__content {
             padding: 30px 15px;
