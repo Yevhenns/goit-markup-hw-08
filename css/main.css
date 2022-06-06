@@ -97,47 +97,48 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+  .icon-set__item {
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+  }
+  .icon-set__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon-set__link:hover, .icon-set__link:focus {
+    background-color: #2196F3;
+  }
+  .icon-set__link:hover .icon-set__icon, .icon-set__link:focus .icon-set__icon {
+    fill: #FFFFFF;
+  }
+  .icon-set__icon--team {
+    fill: #AFB1B8;
+    -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .icon-set__link--footer {
+    fill: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }
-.icon-set__item + .icon-set__item {
-  margin-left: 10px;
-  border-radius: 50%;
-}
-.icon-set__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-set__link:hover, .icon-set__link:focus {
-  background-color: #2196F3;
-}
-.icon-set__link:hover .icon-set__icon, .icon-set__link:focus .icon-set__icon {
-  fill: #FFFFFF;
-}
-.icon-set__icon--team {
-  fill: #AFB1B8;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.icon-set__link--footer {
-  fill: #FFFFFF;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 @media screen and (max-width: 480px) {
   .header {
     border-bottom: 1px solid #ECECEC;
@@ -291,34 +292,45 @@ body {
     display: block;
   }
 }
-.team {
-  background-color: #F5F4FA;
+@media screen and (max-width: 480px) {
+  .team {
+    background-color: #F5F4FA;
+  }
+  .team__item {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+    -ms-flex-preferred-size: calc(25% - 30px);
+        flex-basis: calc(25% - 30px);
+  }
+  .team__content {
+    padding: 30px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team__member {
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 10px;
+  }
+  .team__job {
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 16px;
+  }
 }
-.team__item {
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  text-align: center;
-  -ms-flex-preferred-size: calc(25% - 30px);
-      flex-basis: calc(25% - 30px);
-}
-.team__content {
-  padding: 30px;
-}
-.team__member {
-  color: #212121;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  margin-bottom: 10px;
-}
-.team__job {
-  font-size: 16px;
-  line-height: 1.18;
-  margin-bottom: 16px;
-}
-
 @media screen and (max-width: 480px) {
   .clients__list {
     display: -webkit-box;
@@ -401,9 +413,17 @@ body {
   }
   .footer-join__container {
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer-subscribe__container {
     margin-left: auto;

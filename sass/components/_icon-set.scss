@@ -1,39 +1,45 @@
 @media screen and (max-width: 480px) {
     .icon-set {
-        display: flex;
-        justify-content: center;
-    }
-    
-}
-.icon-set {
-    
-    &__item + &__item {
-        margin-left: 10px;
-        border-radius: 50%;
         
-    }
-    &__link {
         display: flex;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        transition: background-color $transition-time $cubic;
-        &:hover, &:focus {        
-            background-color: $secondary-text-color;
+        flex-wrap: wrap;
+        
+        margin-left: -10px;
+        margin-top: -10px;
+        
+        
+        &__item {
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 50%;
+            
+            
+        }
+        &__link {
+            display: flex;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            transition: background-color $transition-time $cubic;
+            &:hover, &:focus {        
+                background-color: $secondary-text-color;
+            }
+        }
+        &__link:hover .icon-set__icon,
+        &__link:focus .icon-set__icon {
+            fill: $logo-white;
+        }
+        &__icon--team {
+            fill: $icon-grey;
+            transition: fill $transition-time $cubic
+        }
+        &__link--footer {
+            fill: $logo-white;
+            background-color: $footer-join-icon;
         }
     }
-    &__link:hover .icon-set__icon,
-    &__link:focus .icon-set__icon {
-        fill: $logo-white;
-    }
-    &__icon--team {
-        fill: $icon-grey;
-        transition: fill $transition-time $cubic
-    }
-    &__link--footer {
-        fill: $logo-white;
-        background-color: $footer-join-icon;
-    }
+        
+    
 }
