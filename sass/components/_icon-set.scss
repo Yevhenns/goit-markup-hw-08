@@ -1,13 +1,16 @@
+@media screen and (max-width: 480px) {
+    .icon-set {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
 .icon-set {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-top: -10px;
-    &__item {
+    
+    &__item + &__item {
         margin-left: 10px;
-        margin-top: 10px;
         border-radius: 50%;
-        flex-basis: calc(100% / 4 - 10px);
+        
     }
     &__link {
         display: flex;

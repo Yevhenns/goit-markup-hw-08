@@ -1,65 +1,14 @@
-.header {
-    border-bottom: 1px solid $header-border-color;
-    &__container, &__nav {
-        display: flex;
-        align-items: center;
-    }
-    &__pages-list {
-        display: flex;
-        margin-left: 93px;
-    }
-    &__pages-item:not(:last-child) {
-        margin-right: 50px;
-    }
-    &__pages-item:not(:last-child) {
-        margin-right: 50px;
-    }
-    &__pages-link {
-        color: $header-text-color;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        position: relative;
-        display: block;
-    }
-    &__pages-link--active {
-        color: $secondary-text-color;
-        &::after {
-            position: absolute;
-            display: block;
-            bottom: -1px;
-            content: "";
-            width: 100%;
-            height: 4px;
-            border-radius: 2px;
-            background-color: $secondary-text-color;
+@media screen and (max-width: 480px) {
+    .header {
+        border-bottom: 1px solid $header-border-color;
+        &__pages-list {
+            display: none;
+        }
+        &__contacts-list {
+            display: none;
         }
     }
-    &__pages-link,
-    &__contacts-link {
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        transition: color $transition-time $cubic;
-        &:hover, &:focus {
-            color: $secondary-text-color;
-        }
-    }
-    &__contacts-list {
-        display: flex;
-        margin-left: auto;
-    }
-    &__contacts-item {
-        margin-right: 30px;
-    }
-    &__contacts-item:last-child {
-        margin-right: 0;
-    }
-    &__contacts-link {
-        display: flex;
-        align-items: center;
-    }
-    &__contacts-icon {
-        margin-right: 10px;
-        fill: currentColor;
-    }
+    
 }
+
+

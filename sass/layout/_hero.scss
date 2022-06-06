@@ -1,27 +1,51 @@
 .hero {
+    height: auto;
     background-color: $hero-footer-color;
-    padding-top: 200px;
-    padding-bottom: 200px;
     text-align: center;
     &__title {
         color: $logo-white;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        width: 696px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;    
     }
+    
 }
+@media screen and (max-width: 480px) {
+    .hero {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        &__title {
+
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.62;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            max-width: 360px;
+            height: auto;
+        }
+    }
+}
+
+
+
+
+
+
+
 .overlay {
-    max-width: 1600px;
+    
     margin-left: auto;
     margin-right: auto;    
     background-image: linear-gradient(to right, $hero-overlay,$hero-overlay), url(../image/hero-photo.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+@media screen and (max-width: 480px) {
+    .overlay {
+        max-width: 1600px;
+    }
+    
 }

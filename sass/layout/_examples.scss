@@ -1,3 +1,8 @@
+@media screen and (max-width: 480px) {
+    .examples {
+        display: none;
+    }
+}
 .examples {
     &__item {
         position: relative;
