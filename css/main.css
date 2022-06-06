@@ -45,18 +45,19 @@ body {
   overflow: hidden;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section__title {
+    color: #212121;
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
-.section__title {
-  color: #212121;
-  font-size: 36px;
-  line-height: 1.16;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -87,9 +88,8 @@ body {
   .logo {
     font-weight: 700;
     font-size: 24px;
-    line-height: 1.16;
+    line-height: 1.1666;
     display: block;
-    padding: 16px 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -143,11 +143,39 @@ body {
   .header {
     border-bottom: 1px solid #ECECEC;
   }
+  .header__container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .header__pages-list {
     display: none;
   }
   .header__contacts-list {
     display: none;
+  }
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .burger__button-menu {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .burger__close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 .button {
@@ -364,7 +392,7 @@ body {
   }
   .clients__item {
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
     -ms-flex-preferred-size: calc(50% - 30px);
         flex-basis: calc(50% - 30px);
   }
@@ -387,6 +415,16 @@ body {
 @media screen and (max-width: 480px) {
   .footer {
     text-align: center;
+  }
+  .footer-subscribe__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 480px;
   }
   .footer__logo {
     margin-bottom: 20px;
@@ -429,7 +467,8 @@ body {
     margin-left: auto;
   }
   .footer-subscribe__input {
-    max-width: 100%;
+    display: block;
+    max-width: 480px;
     height: 50px;
     margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);

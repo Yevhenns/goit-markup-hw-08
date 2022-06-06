@@ -1,14 +1,33 @@
 @media screen and (max-width: 480px) {
     .header {
         border-bottom: 1px solid $header-border-color;
+        &__container {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
         &__pages-list {
             display: none;
         }
         &__contacts-list {
             display: none;
         }
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
-    
+    .burger__button-menu {
+        position: relative;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+    .burger__close-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 

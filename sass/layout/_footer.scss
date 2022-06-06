@@ -16,6 +16,11 @@
 @media screen and (max-width: 480px) {
     .footer {
         text-align: center;
+        &-subscribe__form {
+            display: flex;
+            flex-direction: column;
+            max-width: 480px;
+        }
         
         
         
@@ -53,7 +58,8 @@
             margin-left: auto;
         }
         &-subscribe__input {
-            max-width: 100%;
+            display: block;
+            max-width: 480px;
             height: 50px;
             margin-bottom: 20px;
             
