@@ -1,7 +1,6 @@
 @media screen and (max-width: 480px) {
     .section {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        
         &__title {
             color: $header-text-color;
             font-size: 28px;
@@ -9,5 +8,18 @@
             margin-bottom: 30px;
             text-align: center;
         }
+    }
+}
+@media screen and (max-width: 768px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+}
+@media screen and (min-width: 769px) {
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }

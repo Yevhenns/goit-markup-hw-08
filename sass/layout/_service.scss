@@ -1,6 +1,9 @@
 .service {
     &__item {
-        flex-basis: calc(100% / 3 - 30px);
+        margin-bottom: 30px;
+    }
+    &__item:last-child {
+        margin-bottom: 0;
     }
     &__link {
         display: flex;

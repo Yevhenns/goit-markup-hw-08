@@ -6,23 +6,33 @@
         color: $logo-white;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 30px;    
+        margin-bottom: 30px;
+        font-weight: 900;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
     }
-    
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .hero {
         padding-top: 118px;
         padding-bottom: 118px;
         &__title {
-
-            font-weight: 900;
             font-size: 26px;
             line-height: 1.62;
-            text-align: center;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
             max-width: 360px;
+            height: auto;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        &__title {
+            font-size: 44px;
+            line-height: 1.36;
+            max-width: 696px;
             height: auto;
         }
     }
