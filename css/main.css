@@ -255,6 +255,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-left: -10px;
   }
   .header__social-item {
@@ -283,22 +285,21 @@ body {
     padding: 0;
     z-index: 2;
   }
-
-  .burger__close-icon {
-    position: absolute;
-    top: 0;
-    right: 0;
+  .burger__button-menu {
+    fill: #212121;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
+  .burger__button-menu:hover, .burger__button-menu:focus {
+    fill: #2196F3;
+  }
   .burger__close {
     display: none;
   }
-
-  .menu-button.is-open .burger__close {
+  .burger__button-menu.is-open .burger__close {
     display: block;
   }
-
-  .menu-button.is-open .burger__menu {
+  .burger__button-menu.is-open .burger__menu {
     display: none;
   }
 }
@@ -318,9 +319,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -376,6 +374,10 @@ body {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .header__container {
+    max-width: 100%;
+    position: relative;
+  }
   .header__pages-list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -390,6 +392,16 @@ body {
   }
   .header__pages-link:hover, .header__pages-link:focus, .header__contacts-link:hover, .header__contacts-link:focus {
     color: #2196F3;
+  }
+  .header__mobile-menu {
+    margin-left: 88px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__contacts-list {
+    position: relative;
+    right: 0;
   }
   .header__contacts-link {
     font-size: 12px;
@@ -416,6 +428,9 @@ body {
   }
   .header__nav {
     margin-left: 93px;
+  }
+  .header__pages-link, .header__contacts-link {
+    font-weight: 500;
   }
 }
 .button {
@@ -854,6 +869,19 @@ body {
   pointer-events: none;
 }
 
+@media screen and (max-width: 768px) {
+  .modal {
+    max-width: 450px;
+    min-height: 609px;
+  }
+  .modal__title {
+    line-height: 1.5;
+  }
+  .modal__policy {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
 .modal {
   position: absolute;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -995,7 +1023,7 @@ body {
 }
 .modal__policy-link {
   color: #2196F3;
-  margin-left: 5px;
+  margin-left: 4px;
 }
 .modal__checkbox-icon {
   display: inline-block;

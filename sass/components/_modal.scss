@@ -13,6 +13,20 @@
         pointer-events: none;
     }
 }
+@media screen and (max-width: 768px) {
+    .modal {
+        max-width: 450px;
+        min-height: 609px;
+        &__title {
+            line-height: 1.5;
+        }
+        &__policy {
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    }
+}
+    
 .modal {
     position: absolute;    
     transform: translate(-50%, -50%) scale(1);
@@ -115,7 +129,7 @@
     }
     &__policy-link {
         color: $secondary-text-color;
-        margin-left: 5px;
+        margin-left: 4px;
     }
     &__checkbox-icon {
         display: inline-block;

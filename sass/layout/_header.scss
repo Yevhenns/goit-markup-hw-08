@@ -84,6 +84,7 @@
         }
         &__social-list {
             display: flex;
+            flex-wrap: wrap;
             margin-left: -10px;
         }
         &__social-item {
@@ -105,29 +106,33 @@
             padding-left: 0;
         }
     }
-    .burger__button-menu {
-        position: relative;
-        border: none;
-        background-color: transparent;
-        padding: 0;
-        z-index: 2;
+    .burger {
+        &__button-menu {
+            position: relative;
+            border: none;
+            background-color: transparent;
+            padding: 0;
+            z-index: 2;
+        }
+        &__button-menu {
+            fill: $header-text-color;
+            transition: color $transition-time $cubic;
+        }
+        &__button-menu:hover,
+        &__button-menu:focus {
+            fill: $secondary-text-color;
+        }
+        &__close{
+            display: none;
+        }
+        &__button-menu.is-open .burger__close {
+            display: block;
+        }
+        &__button-menu.is-open .burger__menu {
+            display: none;
+        }
     }
     
-    .burger__close-icon {
-        
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .burger__close{
-        display: none;
-    }
-    .menu-button.is-open .burger__close {
-        display: block;
-    }
-    .menu-button.is-open .burger__menu {
-        display: none;
-    }
 }
 @media screen and (min-width: 481px) and (max-width: 1600px) {
     .header {
@@ -140,7 +145,6 @@
         }
         &__container, &__nav {
             display: flex;
-            justify-content: space-between;
             align-items: center;
         }
         &__pages-list {
@@ -190,6 +194,10 @@
     
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .header {
+        &__container {
+            max-width: 100%;
+            position: relative;
+        }
         &__pages-list {
             justify-content: space-between;
         }
@@ -203,10 +211,17 @@
                 color: $secondary-text-color;
             }
         }
+        &__mobile-menu {
+            margin-left: 88px;
+            justify-content: space-between;
+        }
+        &__contacts-list {
+            position: relative;
+            right: 0;
+        }
+   
         &__contacts-link {
             font-size: 12px;
-            
-            // margin-left: auto;
         }
         &__contacts-item {
             margin-bottom: 10px;
@@ -230,6 +245,10 @@
         }
         &__nav {
             margin-left: 93px;
+        }
+        &__pages-link,
+        &__contacts-link {
+            font-weight: 500;
         }
     }
     
