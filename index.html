@@ -17,7 +17,7 @@
         <header class="header">
             <div class="container header__container">
                 <a class="link logo" href="./index.html"> Web<span class="logo--header">Studio</span></a>
-                <div class="header__mobile-menu">
+                <div class="header__mobile-menu" data-menu>
                     <nav class="header__nav">
                         <ul class="list header__pages-list">
                             <li class="header__pages-item"> <a class="link header__pages-link header__pages-link--active" href="./index.html">Студия</a> </li>
@@ -49,14 +49,14 @@
                     </ul>
                 </div>
                 
-                <button type="button" class="burger__button-menu">
+                
+                <button type="button" class="burger__button-menu menu-button" data-menu-button>
                     <svg class="burger__menu-icon" width="40" height="40">
-                        <use href="./image/burger.svg#icon-burger-menu"></use>
-                    </svg>
-                    <svg class="burger__close-icon" width="40" height="40">
-                        <use href="./image/burger.svg#icon-burger-close"></use>
+                        <use class="burger__menu" href="./image/burger.svg#icon-burger-menu"></use>
+                        <use class="burger__close" href="./image/burger.svg#icon-burger-close"></use>
                     </svg>
                 </button>
+                <script src="./js/mobile-menu.js"></script>
             </div>
         </header>
         <main>

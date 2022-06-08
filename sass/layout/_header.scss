@@ -1,3 +1,13 @@
+.header {
+    &__pages-link,
+    &__contacts-link {
+        transition: color $transition-time $cubic;
+        &:hover, &:focus {
+            color: $secondary-text-color;
+        }
+    }
+}        
+        
 @media screen and (max-width: 480px) {
     .header {
         
@@ -9,6 +19,7 @@
             justify-content: space-between;
         }
         &__mobile-menu {
+            display: none;
             position: absolute;
             top: 0;
             left: 0;
@@ -16,6 +27,9 @@
             height: 100vh;
             background-color: $logo-white;
             padding: 48px 40px;
+        }
+        &__mobile-menu.is-open {
+            display: block;
         }
         &__nav {
             margin-bottom: 302px;
@@ -84,8 +98,6 @@
         &__social-item:first-child {
             padding-left: 0;
         }
-       
-       
     }
     .burger__button-menu {
         position: relative;
@@ -93,10 +105,21 @@
         background-color: transparent;
         padding: 0;
     }
+    
     .burger__close-icon {
+        
         position: absolute;
         top: 0;
         right: 0;
+    }
+    .burger__close{
+        display: none;
+    }
+    .menu-button.is-open .burger__close {
+        display: block;
+    }
+    .menu-button.is-open .burger__menu {
+        display: none;
     }
 }
 @media screen and (min-width: 481px) and (max-width: 1600px) {
