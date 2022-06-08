@@ -8,17 +8,84 @@
             align-items: center;
             justify-content: space-between;
         }
-        &__pages-list {
-            display: none;
-        }
-        &__contacts-list {
-            display: none;
+        &__mobile-menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: $logo-white;
+            padding: 48px 40px;
         }
         &__nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            margin-bottom: 302px;
         }
+        &__pages-item {
+            margin-bottom: 30px;
+        }
+        &__pages-item:last-child {
+            margin-bottom: 0;
+        }
+        &__contacts-icon {
+            display: none;
+        }
+        &__pages-list {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.175;
+            letter-spacing: 0.02em;
+            
+        }
+        &__pages-link {
+            color: $header-text-color;
+        }
+       
+        &__contacts-item {
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 1.176;
+            letter-spacing: 0.02em;
+        }
+        &__contacts-list {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 64px;
+            
+        }
+        &__contacts-top {
+            order: -1;
+            margin-bottom: 32px;
+        }
+        &__contacts-bottom {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.166;
+            letter-spacing: 0.02em;
+        }
+        &__social-list {
+            display: flex;
+            margin-left: -10px;
+        }
+        &__social-item {
+            border-right: 1px solid rgba(33, 33, 33, 0.2);;
+        }
+        &__social-item:last-child {
+            border: none;
+        }
+        &__social-link {
+            color: $secondary-text-color;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            letter-spacing: 0.02em;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__social-item:first-child {
+            padding-left: 0;
+        }
+       
+       
     }
     .burger__button-menu {
         position: relative;
@@ -35,6 +102,13 @@
 @media screen and (min-width: 481px) and (max-width: 1600px) {
     .header {
         border-bottom: 1px solid $header-border-color;
+        &__social-list {
+            display: none;
+        }
+        &__mobile-menu {
+            display: flex;
+            align-items: center;
+        }
         &__container, &__nav {
             display: flex;
             justify-content: space-between;

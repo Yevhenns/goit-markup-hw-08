@@ -17,30 +17,46 @@
         <header class="header">
             <div class="container header__container">
                 <a class="link logo" href="./index.html"> Web<span class="logo--header">Studio</span></a>
-                <nav class="header__nav">
-                    
-                    <button type="button" class="burger__button-menu">
-                        <svg class="burger__menu-icon" width="40" height="40">
-                            <use href="./image/burger.svg#icon-burger-menu"></use>
-                        </svg>
-                        <svg class="burger__close-icon" width="40" height="40">
-                            <use href="./image/burger.svg#icon-burger-close"></use>
-                        </svg>
-                    </button>
-                    <ul class="list header__pages-list">
-                        <li class="header__pages-item"> <a class="link header__pages-link header__pages-link--active" href="./index.html">Студия</a> </li>
-                        <li class="header__pages-item"> <a class="link header__pages-link" href="./portfolio.html">Портфолио</a> </li>
-                        <li class="header__pages-item"> <a class="link header__pages-link" href="#">Контакты</a> </li>
+                <div class="header__mobile-menu">
+                    <nav class="header__nav">
+                        <ul class="list header__pages-list">
+                            <li class="header__pages-item"> <a class="link header__pages-link header__pages-link--active" href="./index.html">Студия</a> </li>
+                            <li class="header__pages-item"> <a class="link header__pages-link" href="./portfolio.html">Портфолио</a> </li>
+                            <li class="header__pages-item"> <a class="link header__pages-link" href="#">Контакты</a> </li>
+                        </ul>
+                    </nav>
+                    <ul class="list header__contacts-list">
+                        <li class="header__contacts-item header__contacts-bottom"> <a class="link header__contacts-link" href="mailto:info@devstudio.com">
+                            <svg class="header__contacts-icon" width="16" height="12"><use href="./image/symbol-defs.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a></li>
+                        <li class="header__contacts-item header__contacts-top"> <a class="link header__contacts-link" href="tel:+380961111111">
+                            <svg class="header__contacts-icon" width="10" height="16"><use href="./image/symbol-defs.svg#icon-phone"></use></svg>
+                            +38 096 111 11 11</a> </li>
                     </ul>
-                </nav>
-                <ul class="list header__contacts-list">
-                    <li class="header__contacts-item"> <a class="link header__contacts-link" href="mailto:info@devstudio.com">
-                        <svg class="header__contacts-icon" width="16" height="12"><use href="./image/symbol-defs.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a></li>
-                    <li class="header__contacts-item"> <a class="link header__contacts-link" href="tel:+380961111111">
-                        <svg class="header__contacts-icon" width="10" height="16"><use href="./image/symbol-defs.svg#icon-phone"></use></svg>
-                        +38 096 111 11 11</a> </li>
-                </ul>
+                    <ul class="list header__social-list">
+                        <li class="header__social-item">
+                            <a class="link header__social-link" href="#">Instagram</a>
+                        </li>
+                        <li class="header__social-item">
+                            <a class="link header__social-link" href="#">Twitter</a>
+                        </li>
+                        <li class="header__social-item">
+                            <a class="link header__social-link" href="#">Facebook</a>
+                        </li>
+                        <li class="header__social-item">
+                            <a class="link header__social-link" href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <button type="button" class="burger__button-menu">
+                    <svg class="burger__menu-icon" width="40" height="40">
+                        <use href="./image/burger.svg#icon-burger-menu"></use>
+                    </svg>
+                    <svg class="burger__close-icon" width="40" height="40">
+                        <use href="./image/burger.svg#icon-burger-close"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <main>
