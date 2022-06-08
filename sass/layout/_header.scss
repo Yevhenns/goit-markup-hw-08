@@ -1,4 +1,5 @@
 .header {
+    border-bottom: 1px solid $header-border-color;
     &__pages-link,
     &__contacts-link {
         transition: color $transition-time $cubic;
@@ -10,7 +11,6 @@
         
 @media screen and (max-width: 480px) {
     .header {
-        
         &__container {
             padding-top: 10px;
             padding-bottom: 10px;
@@ -27,6 +27,7 @@
             height: 100vh;
             background-color: $logo-white;
             padding: 48px 40px;
+            z-index: 1;
         }
         &__mobile-menu.is-open {
             display: block;
@@ -37,6 +38,7 @@
         &__pages-item {
             margin-bottom: 30px;
         }
+        
         &__pages-item:last-child {
             margin-bottom: 0;
         }
@@ -52,6 +54,9 @@
         }
         &__pages-link {
             color: $header-text-color;
+        }
+        &__pages-link--active {
+            color: $secondary-text-color;
         }
        
         &__contacts-item {
@@ -75,6 +80,7 @@
             font-size: 24px;
             line-height: 1.166;
             letter-spacing: 0.02em;
+            z-index: 9;
         }
         &__social-list {
             display: flex;
@@ -104,6 +110,7 @@
         border: none;
         background-color: transparent;
         padding: 0;
+        z-index: 2;
     }
     
     .burger__close-icon {
@@ -124,7 +131,6 @@
 }
 @media screen and (min-width: 481px) and (max-width: 1600px) {
     .header {
-        border-bottom: 1px solid $header-border-color;
         &__social-list {
             display: none;
         }
