@@ -1,5 +1,12 @@
 @media screen and (max-width: 480px) {
     .clients {
+        &__item {
+            flex-basis: calc(100% / 2 - 30px);
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .clients {
         &__list {
             display: flex;
             flex-wrap: wrap;
@@ -23,7 +30,7 @@
         &__item {
             margin-left: 30px;
             margin-top: 30px;
-            flex-basis: calc(100% / 2 - 30px);
+            flex-basis: calc(100% / 3 - 30px);
         }
     }
 }

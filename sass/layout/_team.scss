@@ -1,5 +1,15 @@
 @media screen and (max-width: 480px) {
     .team {
+        &__item {
+            margin-bottom:30px;
+        }
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .team {
         background-color: $secondary-color;
         &__item {
             background: $logo-white;
@@ -8,11 +18,9 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
             text-align: center;
-            margin-bottom:30px ;
+            
         }
-        &__item:last-child {
-            margin-bottom: 0;
-        }
+        
         &__content {
             padding: 30px 15px;
             display: flex;
@@ -30,6 +38,13 @@
             font-size: 16px;
             line-height: 1.18;
             margin-bottom: 16px;
+        }
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .team {
+        &__item {
+           flex-basis: calc(100% / 2 - 30px); 
         }
     }
 }
