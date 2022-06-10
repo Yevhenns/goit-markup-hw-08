@@ -1,10 +1,4 @@
 .service {
-    &__item {
-        margin-bottom: 30px;
-    }
-    &__item:last-child {
-        margin-bottom: 0;
-    }
     &__link {
         display: flex;
         flex-direction: column;
@@ -59,5 +53,31 @@
     &__description {
         font-size: 16px;
         line-height: 1.88;
+    }
+}
+@media screen and (max-width: 480px) {
+    .service {
+        &__item {
+            margin-bottom: 30px;
+        }
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+       
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .service {
+        &__item {
+            flex-basis: calc(100% / 2 - 30px);
+            height: 100%;
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .service {
+        &__item {
+            flex-basis: calc(100% / 3 - 30px);
+        }
     }
 }

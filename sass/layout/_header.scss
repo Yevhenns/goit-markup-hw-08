@@ -134,7 +134,7 @@
     }
     
 }
-@media screen and (min-width: 481px) and (max-width: 1600px) {
+@media screen and (min-width: 481px) {
     .header {
         &__social-list {
             display: none;
@@ -231,8 +231,7 @@
     }
 }
 @media screen and (min-width: 769px) {
-    .header {
-        
+    .header {        
         &__container {
             justify-content: center;
         }
