@@ -232,9 +232,13 @@
 }
 @media screen and (min-width: 769px) {
     .header {
+        
+        &__container {
+            justify-content: center;
+        }
         &__contacts-list {
             display: flex;
-            margin-left: auto;
+            margin-left: 300px;
         }
         &__contacts-item {
             margin-right: 30px;

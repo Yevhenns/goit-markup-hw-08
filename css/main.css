@@ -45,13 +45,17 @@ body {
   overflow: hidden;
 }
 
+.section__title {
+  color: #212121;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .section__title {
     color: #212121;
     font-size: 28px;
     line-height: 1.17;
     margin-bottom: 30px;
-    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -64,6 +68,11 @@ body {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .section__title {
+    font-size: 36px;
+    line-height: 1.166;
+    margin-bottom: 50px;
   }
 }
 .container {
@@ -81,6 +90,11 @@ body {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .container {
+    width: 1200px;
   }
 }
 .logo {
@@ -412,11 +426,16 @@ body {
   }
 }
 @media screen and (min-width: 769px) {
+  .header__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .header__contacts-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
+    margin-left: 300px;
   }
   .header__contacts-item {
     margin-right: 30px;
@@ -648,15 +667,7 @@ body {
     margin-top: 30px;
   }
 }
-@media screen and (max-width: 480px) {
-  .team__item {
-    margin-bottom: 30px;
-  }
-  .team__item:last-child {
-    margin-bottom: 0;
-  }
-}
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
   .team {
     background-color: #F5F4FA;
   }
@@ -693,19 +704,27 @@ body {
     margin-bottom: 16px;
   }
 }
+@media screen and (max-width: 480px) {
+  .team__item {
+    margin-bottom: 30px;
+  }
+  .team__item:last-child {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .team__item {
     -ms-flex-preferred-size: calc(50% - 30px);
         flex-basis: calc(50% - 30px);
   }
 }
-@media screen and (max-width: 480px) {
-  .clients__item {
-    -ms-flex-preferred-size: calc(50% - 30px);
-        flex-basis: calc(50% - 30px);
+@media screen and (min-width: 769px) {
+  .team__item {
+    -ms-flex-preferred-size: calc(25% - 30px);
+        flex-basis: calc(25% - 30px);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1600px) {
   .clients__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -736,6 +755,14 @@ body {
     border: 1px solid #2196F3;
     fill: #2196F3;
   }
+}
+@media screen and (max-width: 1600px) and (max-width: 480px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+  }
+}
+@media screen and (max-width: 1600px) and (max-width: 768px) {
   .clients__item {
     margin-left: 30px;
     margin-top: 30px;
