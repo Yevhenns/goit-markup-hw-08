@@ -1,41 +1,39 @@
 .clients {
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-left: -30px;
-        margin-top: -30px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  &__link {
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $icon-grey;
+    border-radius: 4px;
+    fill: $icon-grey;
+    transition: fill $transition-time $cubic, border $transition-time $cubic;
+    &:hover,
+    &:focus {
+      border: 1px solid $secondary-text-color;
+      fill: $secondary-text-color;
     }
-    &__link {
-        height: 92px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid $icon-grey;
-        border-radius: 4px;
-        fill: $icon-grey;
-        transition: fill $transition-time $cubic, border $transition-time $cubic;
-        &:hover, &:focus {
-            border: 1px solid $secondary-text-color;
-            fill: $secondary-text-color;
-        }
+  }
+  &__item {
+    @media screen and (max-width: 768px) {
+      margin-left: 30px;
+      margin-top: 30px;
     }
-    &__item {
-        @media screen and (max-width: 480px) {
-            flex-basis: calc(100% / 2 - 30px);
-        }
-        @media screen and (max-width: 768px) {
-            margin-left: 30px;
-            margin-top: 30px;
-            flex-basis: calc(100% / 3 - 30px);
-        }
-        @media screen and (min-width: 769px) {
-            flex-basis: calc(100% / 6 - 30px);
-        }
+    @media screen and (max-width: 480px) {
+      flex-basis: calc(100% / 2 - 30px);
     }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+    @media screen and (min-width: 769px) {
+      flex-basis: calc(100% / 6 - 30px);
+    }
+  }
 }
-    
-
-
-
-
