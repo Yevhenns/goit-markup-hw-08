@@ -1,36 +1,37 @@
 .section {
+  &__title {
+    color: $header-text-color;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section {
     &__title {
-        color: $header-text-color;
-        text-align: center;
+      color: $header-text-color;
+      font-size: 28px;
+      line-height: 1.17;
+      margin-bottom: 30px;
     }
+  }
 }
 @media screen and (max-width: 768px) {
-    .section {
-        
-        &__title {
-            color: $header-text-color;
-            font-size: 28px;
-            line-height: 1.17;
-            margin-bottom: 30px;
-        }
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+    &__title {
+      margin-bottom: 30px;
     }
-}
-@media screen and (max-width: 768px) {
-    .section {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    
+  }
 }
 @media screen and (min-width: 769px) {
-    .section {
-        padding-top: 94px;
-        padding-bottom: 94px;
-        &__title {
-            font-size: 36px;
-            line-height: 1.166;
-            margin-bottom: 50px;
-        }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__title {
+      font-size: 36px;
+      line-height: 1.166;
+      margin-bottom: 50px;
     }
-    
+  }
 }

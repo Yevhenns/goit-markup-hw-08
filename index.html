@@ -148,10 +148,12 @@
                     <h2 class="section__title">Наша команда</h2>
                     <ul class="list team__list card-set">
                         <li class="card-set__item team__item">
-                            <img srcset="./image/index/member-1_450_1x.jpg 450w, ./image/index/member-1_900_2x.jpg 900w" 
-                              src="./image/index/member-1_450_1x.jpg"
-                              alt="Фото Игоря Демьяненко"
-                              sizes="(min-width: 769px) 25vw, (min-width: 481px) 50vw, (max-width: 480px) 100vw">
+                          <picture>
+                            <source srcset="./image/index/member-1_mob_1x.jpg 1x, ./image/index/member-1_mob_2x.jpg 2x" media="(max-width: 480px)">
+                            <source srcset="./image/index/member-1_tab_1x.jpg 1x, ./image/index/member-1_tab_2x.jpg 2x" media="(min-width: 481px)">
+                            <source srcset="./image/index/member-1_pc_1x.jpg 1x, ./image/index/member-1_pc_2x.jpg 2x" media="(min-width: 769px)">
+                            <img src="./image/index/member-1_mob_1x.jpg" alt="Фото Игоря Демьяненко">
+                          </picture>
                             <div class="team__content">
                                 <h3 class="team__member">Игорь Демьяненко</h3>
                                 <p class="team__job" lang="en">Product Designer</p>
@@ -181,10 +183,14 @@
                             </div>                            
                         </li>
                         <li class="card-set__item team__item">
-                            <img srcset="./image/index/member-2_450_1x.jpg 450w, ./image/index/member-2_900_2x.jpg 900w"
-                              src="./image/index/member-2_450_1x.jpg"
-                              alt="Фото Ольги Репиной"
-                              sizes="(min-width: 769px) 25vw, (min-width: 481px) 50vw, (max-width: 480px) 100vw">
+                          <picture>
+                            <source srcset="./image/index/member-2_mob_1x.jpg 1x, ./image/index/member-2_mob_2x.jpg 2x"
+                              media="(max-width: 480px)">
+                            <source srcset="./image/index/member-2_tab_1x.jpg 1x, ./image/index/member-2_tab_2x.jpg 2x"
+                              media="(min-width: 481px)">
+                            <source srcset="./image/index/member-2_pc_1x.jpg 1x, ./image/index/member-2_pc_2x.jpg 2x" media="(min-width: 769px)">
+                            <img src="./image/index/member-2_mob_1x.jpg" alt="Фото Ольги Репиной">
+                          </picture>
                             <div class="team__content">
                                 <h3 class="team__member">Ольга Репина</h3>
                                 <p class="team__job" lang="en">Frontend Developer</p>
@@ -213,10 +219,15 @@
                             </div>
                         </li>
                         <li class="card-set__item team__item">
-                            <img srcset="./image/index/member-3_450_1x.jpg 450w, ./image/index/member-3_900_2x.jpg 900w"
-                              src="./image/index/member-3_450_1x.jpg"
-                              alt="Фото Николая Тарасова"
-                              sizes="(min-width: 769px) 25vw, (min-width: 481px) 50vw, (max-width: 480px) 100vw">
+                          <picture>
+                            <source srcset="./image/index/member-3_mob_1x.jpg 1x, ./image/index/member-3_mob_2x.jpg 2x"
+                              media="(max-width: 480px)">
+                            <source srcset="./image/index/member-3_tab_1x.jpg 1x, ./image/index/member-3_tab_2x.jpg 2x"
+                              media="(min-width: 481px)">
+                            <source srcset="./image/index/member-3_pc_1x.jpg 1x, ./image/index/member-3_pc_2x.jpg 2x" media="(min-width: 769px)">
+                            <img src="./image/index/member-3_mob_1x.jpg" alt="Фото Николая Тарасова">
+                          </picture>
+                            
                             <div class="team__content">
                                 <h3 class="team__member">Николай Тарасов</h3>
                                 <p class="team__job" lang="en">Marketing</p>
@@ -245,9 +256,15 @@
                             </div>
                         </li>
                         <li class="card-set__item team__item">
-                            <img srcset="./image/index/member-4_450_1x.jpg 450w, ./image/index/member-4_900_2x.jpg 900w"
-                              src="./image/index/member-4_450_1x.jpg" alt="Фото Михаила Ермакова"
-                              sizes="(min-width: 769px) 25vw, (min-width: 481px) 50vw, (max-width: 480px) 100vw">
+                          <picture>
+                            <source srcset="./image/index/member-4_mob_1x.jpg 1x, ./image/index/member-4_mob_2x.jpg 2x"
+                              media="(max-width: 480px)">
+                            <source srcset="./image/index/member-4_tab_1x.jpg 1x, ./image/index/member-4_tab_2x.jpg 2x"
+                              media="(min-width: 481px)">
+                            <source srcset="./image/index/member-4_pc_1x.jpg 1x, ./image/index/member-4_pc_2x.jpg 2x" media="(min-width: 769px)">
+                            <img src="./image/index/member-4_mob_1x.jpg" alt="Фото Михаила Ермакова">
+                          </picture>
+                            
                             <div class="team__content">
                                 <h3 class="team__member">Михаил Ермаков</h3>
                                 <p class="team__job" lang="en">UI Designer</p>
