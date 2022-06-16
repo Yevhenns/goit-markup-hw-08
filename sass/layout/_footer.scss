@@ -24,7 +24,7 @@
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .footer {
         &-address__item:not(:last-child) {
             margin-bottom: 9px;
@@ -43,7 +43,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .footer {
         text-align: center;
         &__logo {
@@ -94,7 +94,7 @@
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .footer {
         &__container {
             display: flex;
@@ -118,7 +118,7 @@
         }
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
     .footer {
         background-color: $hero-footer-color;
         padding-top: 60px;

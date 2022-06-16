@@ -2,7 +2,13 @@
   height: auto;
   background-color: $hero-footer-color;
   text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
   &__title {
+    font-size: 26px;
+    line-height: 1.62;
+    max-width: 360px;
+    height: auto;
     color: $logo-white;
     margin-left: auto;
     margin-right: auto;
@@ -13,19 +19,8 @@
     text-transform: uppercase;
   }
 }
-@media screen and (max-width: 768px) {
-  .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    &__title {
-      font-size: 26px;
-      line-height: 1.62;
-      max-width: 360px;
-      height: auto;
-    }
-  }
-}
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
