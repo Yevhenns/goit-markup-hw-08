@@ -44,7 +44,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
   background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
     url(../../image/index/hero_mobile_1x.jpg);
     @media screen and (min-resolution: 2dppx) {
