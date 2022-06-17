@@ -26,28 +26,35 @@
                         <li class="header__pages-item"> <a class="link header__pages-link" href="#">Контакты</a> </li>
                     </ul>
                 </nav>
-                <ul class="list header__contacts-list">
-                    <li class="header__contacts-item header__contacts-bottom"> <a class="link header__contacts-link" href="mailto:info@devstudio.com">
-                        <svg class="header__contacts-icon" width="16" height="12"><use href="./image/symbol-defs.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a></li>
-                    <li class="header__contacts-item header__contacts-top"> <a class="link header__contacts-link" href="tel:+380961111111">
-                        <svg class="header__contacts-icon" width="10" height="16"><use href="./image/symbol-defs.svg#icon-phone"></use></svg>
-                        +38 096 111 11 11</a> </li>
-                </ul>
-                <ul class="list header__social-list">
-                    <li class="header__social-item">
-                        <a class="link header__social-link" href="#">Instagram</a>
-                    </li>
-                    <li class="header__social-item">
-                        <a class="link header__social-link" href="#">Twitter</a>
-                    </li>
-                    <li class="header__social-item">
-                        <a class="link header__social-link" href="#">Facebook</a>
-                    </li>
-                    <li class="header__social-item">
-                        <a class="link header__social-link" href="#">LinkedIn</a>
-                    </li>
-                </ul>
+                <div>
+                    <ul class="list header__contacts-list">
+                        <li class="header__contacts-item header__contacts-bottom"> <a class="link header__contacts-link"
+                                href="mailto:info@devstudio.com">
+                                <svg class="header__contacts-icon" width="16" height="12">
+                                    <use href="./image/symbol-defs.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com</a></li>
+                        <li class="header__contacts-item header__contacts-top"> <a class="link header__contacts-link"
+                                href="tel:+380961111111">
+                                <svg class="header__contacts-icon" width="10" height="16">
+                                    <use href="./image/symbol-defs.svg#icon-phone"></use>
+                                </svg>
+                                +38 096 111 11 11</a> </li>
+                    </ul>
+                    <ul class="list header__social-list">
+                        <li class="header__social-item">
+                            <a class="link header__social-link" href="#">Instagram</a>
+                        </li>
+                        <li class="header__social-item">
+                            <a class="link header__social-link" href="#">Twitter</a>
+                        </li>
+                        <li class="header__social-item">
+                            <a class="link header__social-link" href="#">Facebook</a>
+                        </li>
+                        <li class="header__social-item">
+                            <a class="link header__social-link" href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             
             
@@ -79,12 +86,11 @@
                         <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
                             <div class="service__thumb">
                               <picture>
-                                <source srcset="./image/portfolio/port-1_mob_1x.jpg 1x, ./image/portfolio/port-1_mob_1x.jpg 2x"
-                                  media="(max-width: 480px)">
+                                <source srcset="./image/portfolio/port-1_mob_1x.jpg 1x, ./image/portfolio/port-1_mob_1x.jpg 2x" type="image">
                                 <source srcset="./image/portfolio/port-1_tab_1x.jpg 1x, ./image/portfolio/port-1_tab_1x.jpg 2x"
-                                  media="(min-width: 481px)">
+                                  media="(min-width: 768px)" type="image">
                                 <source srcset="./image/portfolio/port-1_pc_1x.jpg 1x, ./image/portfolio/port-1_pc_1x.jpg 2x"
-                                  media="(min-width: 769px)">
+                                  media="(min-width: 1200px)" type="image">
                                 <img src="./image/portfolio/port-1_mob_1x.jpg" alt="Веб-сайт Технокряк"
                                 width="450" height="294">
                               </picture>
@@ -104,15 +110,15 @@
                     <li class="card-set__item service__item">
                         <a class="link service__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
                             <div class="service__thumb">
-                              <picture>
-                                <source srcset="./image/portfolio/port-2_mob_1x.jpg 1x, ./image/portfolio/port-2_mob_1x.jpg 2x"
-                                  media="(max-width: 480px)">
-                                <source srcset="./image/portfolio/port-2_tab_1x.jpg 1x, ./image/portfolio/port-2_tab_1x.jpg 2x"
-                                  media="(min-width: 481px)">
-                                <source srcset="./image/portfolio/port-2_pc_1x.jpg 1x, ./image/portfolio/port-2_pc_1x.jpg 2x"
-                                  media="(min-width: 769px)">
-                                <img src="./image/portfolio/port-2_mob_1x.jpg" alt="Постер New Orlean vs Golden Star" width="450" height="294">
-                                
+                                <picture>
+                                    <source srcset="./image/portfolio/port-2_mob_1x.jpg 1x, ./image/portfolio/port-2_mob_1x.jpg 2x"
+                                        media="(max-width: 480px)">
+                                    <source srcset="./image/portfolio/port-2_tab_1x.jpg 1x, ./image/portfolio/port-2_tab_1x.jpg 2x"
+                                        media="(min-width: 481px)">
+                                    <source srcset="./image/portfolio/port-2_pc_1x.jpg 1x, ./image/portfolio/port-2_pc_1x.jpg 2x"
+                                        media="(min-width: 769px)">
+                                    <img src="./image/portfolio/port-2_mob_1x.jpg" alt="Постер New Orlean vs Golden Star" width="450" height="294">
+                                </picture>
                                 <div class="service__wrap">
                                     <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -135,7 +141,7 @@
                                   <source srcset="./image/portfolio/port-3_pc_1x.jpg 1x, ./image/portfolio/port-3_pc_1x.jpg 2x"
                                     media="(min-width: 769px)">
                                   <img src="./image/portfolio/port-3_mob_1x.jpg" alt="Ресторан Seafood" width="450" height="294">
-
+                                </picture>
                                 <div class="service__wrap">
                                     <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -158,7 +164,7 @@
                                   <source srcset="./image/portfolio/port-4_pc_1x.jpg 1x, ./image/portfolio/port-4_pc_1x.jpg 2x"
                                     media="(min-width: 769px)">
                                   <img src="./image/portfolio/port-4_mob_1x.jpg" alt="Проект Prime" width="450" height="294">
-
+                                </picture>
                                 <div class="service__wrap">
                                     <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -181,7 +187,7 @@
                                   <source srcset="./image/portfolio/port-5_pc_1x.jpg 1x, ./image/portfolio/port-5_pc_1x.jpg 2x"
                                     media="(min-width: 769px)">
                                   <img src="./image/portfolio/port-5_mob_1x.jpg" alt="Проект Boxes" width="450" height="294">
-
+                                </picture>
                                 <div class="service__wrap">
                                     <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -204,7 +210,7 @@
                                   <source srcset="./image/portfolio/port-6_pc_1x.jpg 1x, ./image/portfolio/port-6_pc_1x.jpg 2x"
                                     media="(min-width: 769px)">
                                   <img src="./image/portfolio/port-6_mob_1x.jpg" alt="Inspiration has no Borders" width="450" height="294">
-
+                                </picture>
                                 <div class="service__wrap">
                                     <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -227,7 +233,7 @@
                                   <source srcset="./image/portfolio/port-7_pc_1x.jpg 1x, ./image/portfolio/port-7_pc_1x.jpg 2x"
                                     media="(min-width: 769px)">
                                   <img src="./image/portfolio/port-7_mob_1x.jpg" alt="Издание Limited Edition" width="450" height="294">
-
+                                </picture>
                                 <div class="service__wrap">
                                     <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -250,7 +256,7 @@
                                   <source srcset="./image/portfolio/port-8_pc_1x.jpg 1x, ./image/portfolio/port-8_pc_1x.jpg 2x"
                                     media="(min-width: 769px)">
                                   <img src="./image/portfolio/port-8_mob_1x.jpg" alt="Проект LAB" width="450" height="294">
-
+                                </picture>
                                 <div class="service__wrap">
                                     <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>
@@ -273,7 +279,7 @@
                                   <source srcset="./image/portfolio/port-9_pc_1x.jpg 1x, ./image/portfolio/port-9_pc_1x.jpg 2x"
                                     media="(min-width: 769px)">
                                   <img src="./image/portfolio/port-9_mob_1x.jpg" alt="Growing Business" width="450" height="294">
-
+                                </picture>
                                 <div class="service__wrap">
                                     <p class="service__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                 </div>

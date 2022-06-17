@@ -22,7 +22,7 @@
   top: 50%;
   padding: 40px;
   text-align: center;
-  max-width: 450px;
+  max-width: 100%;
   transition: transform $transition-time $cubic $transition-time;
   border-radius: 4px;
   background-color: $logo-white;
@@ -174,7 +174,9 @@
     width: 528px;
     &__title {
         line-height: 1.15;
-      }
+    }
+    &__policy {
+      font-size: 14px;
+    }
   }
-  
 }
