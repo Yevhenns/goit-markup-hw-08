@@ -45,7 +45,7 @@
       background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
       url(../../image/index/hero_mobile_2x.jpg);
   }
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
       background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
       url(../../image/index/hero_tablet_1x.jpg);
     @media screen and (min-resolution: 2dppx) {
@@ -53,7 +53,7 @@
       url(../../image/index/hero_tablet_2x.jpg);
     }
   }
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
       background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
       url(../../image/index/hero_pc_1x.jpg);
     @media screen and (min-resolution: 2dppx) {
