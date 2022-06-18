@@ -29,11 +29,10 @@
         }
     }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
     .filter {
         &__button-set {
             justify-content: center;
         }
     }
-    
 }
