@@ -1,48 +1,37 @@
-@media screen and (max-width: 767px) {
-    .benefits {
-        &__list {
-            flex-wrap: nowrap;
-        }
-    }
-}
 .benefits {
-    
-    &__list {
-        flex-wrap: nowrap;
+  &__item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
     }
-    &__item {
-        @media screen and (min-width: 768px) {
-            flex-basis: calc(100% / 2 - 30px);
-        }
-        @media screen and (min-width: 1200px) {
-            flex-basis: calc(100% / 4 - 30px);
-        }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
     }
-    &__title {
-        color: $header-text-color;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        @media screen and (max-width: 767px) {
-            text-align: center;
-        }
+  }
+  &__title {
+    color: $header-text-color;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
     }
-    &__icon-wrapper {
-        height: 120px;
-        background-color: $secondary-color;
-        border-radius: 4px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin-bottom: 30px;
-    }
-    &__icon {
-        margin-left: auto;;
-        margin-right: auto;
-    }
+  }
+  &__icon-wrapper {
+    height: 120px;
+    background-color: $secondary-color;
+    border-radius: 4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .benefits {
-        padding-bottom: 0;
-    }
+  .benefits {
+    padding-bottom: 0;
+  }
 }

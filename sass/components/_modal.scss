@@ -32,11 +32,8 @@
   }
   &__title {
     color: $header-text-color;
-    font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
-    
-    letter-spacing: 0.03em;
     margin-bottom: 12px;
   }
   &__form {
@@ -85,7 +82,6 @@
     }
   }
   &__policy {
-    
     color: $main-text-color;
     cursor: pointer;
     font-size: 12px;
@@ -173,7 +169,7 @@
   .modal {
     width: 528px;
     &__title {
-        line-height: 1.15;
+      line-height: 1.15;
     }
     &__policy {
       font-size: 14px;

@@ -1,191 +1,167 @@
 .footer {
-    background-color: $hero-footer-color;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
-    &-join__text,
-    &-subscribe__text {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        text-transform: uppercase;
-        color: $logo-white;
-        margin-bottom: 20px;
-        display: inline-block;
+  background-color: $hero-footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  &-join__text,
+  &-subscribe__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $logo-white;
+    margin-bottom: 20px;
+  }
+  &__address {
+    margin-bottom: 60px;
+  }
+  &-address {
+    font-style: inherit;
+  }
+  &-address__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  &-subscribe__icon {
+    fill: $logo-white;
+    margin-left: 10px;
+  }
+  &-join__container {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-subscribe__form {
+    max-width: 100%;
+  }
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &-subscribe__input {
+    display: block;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  &-address__link[target='_blank'] {
+    color: $logo-white;
+  }
+  &-address__link {
+    color: $footer-contacts-color;
+    transition: color $transition-time $cubic;
+    &:hover,
+    &:focus {
+      color: $secondary-text-color;
     }
-    &__address {
-        margin-bottom: 60px;
+  }
+  &-subscribe__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &-subscribe__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    color: $logo-white;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
     }
-    &-address {
-        font-style: inherit;
-    }
-    &-address__item:not(:last-child) {
-        margin-bottom: 9px;
-    }
-    &-subscribe__icon {
-        fill: $logo-white;
-        margin-left: 10px;
-    }
-    &-join__container {
-        max-width: 100%;
-        margin-bottom: 60px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &-subscribe__form {
-        max-width: 100%;
-    }
-    &__logo {
-        margin-bottom: 20px;
-        justify-content: center;
-    }
-    &-subscribe__input {
-        display: block;
-        height: 50px;
-        margin-bottom: 20px;
-    }
-    &-address__link[target="_blank"] {
-        color: $logo-white;
-    }
-    &-address__link {
-        color: $footer-contacts-color;
-        transition: color $transition-time $cubic;
-        &:hover,
-        &:focus {
-            color: $secondary-text-color;
-        }
-    }
-    &-subscribe__form {
-        display: flex;
-        flex-direction: column;
-    }
-    &-subscribe__input {
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-        background-color: transparent;
-        padding: 15px 16px;
-        color: $logo-white;
-        font-size: 16px;
-        line-height: 1.25;
-        letter-spacing: 0.03em;
-        &::placeholder {
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
-        }
-    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .footer {
-        &__container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        &__address {
-            margin-left: 76px;
-        }
-        &-join__container {
-            margin-left: 165px;
-        }
-        &-address__item:not(:last-child) {
-            margin-bottom: 8px;
-        }
-        &-subscribe__container {
-            margin-left: auto;
-            margin-right: auto;
-        }
-        &-subscribe__input {
-            width: 450px;
-        }
+  .footer {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
     }
+    &__address {
+      margin-left: 76px;
+    }
+    &-join__container {
+      width: 206px;
+      margin-left: 165px;
+    }
+    &-subscribe__container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &-subscribe__input {
+      width: 450px;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .footer {
-        background-color: $hero-footer-color;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        text-align: left;
-        &__container {
-            display: flex;
-            align-items: baseline;
-        }
-        &__address {
-            margin: 0;
-        }
-        &__logo {
-            margin-bottom: 20px;
-        }
-        &-address {
-            font-style: inherit;
-        }
-        &-address__item:not(:last-child) {
-            margin-bottom: 9px;
-        }
-        &-address__link[target="_blank"] {
-            color: $logo-white;
-        }
-        &-address__link {
-            color: $footer-contacts-color;
-            transition: color $transition-time $cubic;
-            &:hover, &:focus {
-                color: $secondary-text-color;
-            }
-        }
-        &-join__container {
-            width: 206px;
-            margin-left: 70px;
-            margin-bottom: 0;
-        }
-        &-join__text,
-        &-subscribe__text {
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.14;
-            text-transform: uppercase;
-            color: $logo-white;
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-        &-subscribe__container {
-            margin-left: auto;
-            margin-right: 0;
-        }
-        &-subscribe__input {
-            width: 358px;
-            height: 50px;
-            margin-right: 12px;
-            
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            border-radius: 4px;
-            background-color: transparent;
-            padding: 15px 16px;
-        
-            color: $logo-white;
-            font-size: 16px;
-            line-height: 1.25;
-            letter-spacing: 0.03em;
-            &::placeholder {
-                font-size: 16px;
-                line-height: 1.25;
-                letter-spacing: 0.03em;
-                color: rgba(255, 255, 255, 0.6);
-            }
-        }
-        &-subscribe__form {
-            flex-direction: row;
-        }
-        &-subscribe__input {
-            margin-bottom: 0;
-        }
-        &-subscribe__icon {
-            fill: $logo-white;
-            margin-left: 10px;
-        }
+  .footer {
+    text-align: left;
+    &__address {
+      margin: 0;
     }
+    &-address {
+      font-style: inherit;
+    }
+    &-address__item:not(:last-child) {
+      margin-bottom: 9px;
+    }
+    &-address__link[target='_blank'] {
+      color: $logo-white;
+    }
+    &-address__link {
+      color: $footer-contacts-color;
+      transition: color $transition-time $cubic;
+      &:hover,
+      &:focus {
+        color: $secondary-text-color;
+      }
+    }
+    &-join__container {
+      margin-left: 70px;
+      margin-bottom: 0;
+      align-items: flex-start;
+    }
+    &-subscribe__container {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    &-subscribe__input {
+      width: 358px;
+      height: 50px;
+      margin-right: 12px;
+
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: transparent;
+      padding: 15px 16px;
+
+      color: $logo-white;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+    &-subscribe__form {
+      flex-direction: row;
+    }
+    &-subscribe__input {
+      margin-bottom: 0;
+    }
+    &-subscribe__icon {
+      fill: $logo-white;
+      margin-left: 10px;
+    }
+  }
 }
