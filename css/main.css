@@ -96,15 +96,11 @@ body {
   font-family: "Raleway", sans-serif;
   color: #2196F3;
   display: inline-block;
-  font-weight: 700;
   font-size: 24px;
   line-height: 1.1666;
 }
 .logo--header {
   color: #000000;
-}
-.logo__logo {
-  margin-bottom: 20px;
 }
 .logo--footer {
   color: #FFFFFF;
